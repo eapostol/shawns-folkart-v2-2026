@@ -48,6 +48,10 @@ window.open(URLtoload,'linkwindow','height=400,width=400,scrollbars=yes,status=n
             /^https?:\/\/(?:www\.)?touchwooddesign\.com\/common\/(nav2?\.swf)$/i,
             new URL("../common/", window.location.href).href + "$1",
           ],
+          [
+            /^(?:.*\/)?links2\.txt$/i,
+            new URL("links-public.txt", window.location.href).href,
+          ],
         ],
       };
     </script>

@@ -2,13 +2,19 @@
 
 <html>
   <head>
-    <title>The Artist</title>
+    <title>Shawns Folk Art :: The Artist</title>
     <script>
       window.RufflePlayer = window.RufflePlayer || {};
       window.RufflePlayer.config = {
         autoplay: "on",
         splashScreen: false,
         unmuteOverlay: "hidden",
+        urlRewriteRules: [
+          [
+            "http://www.touchwooddesign.com/shawnsfolkart/comments/index.html",
+            new URL("../comments/index.html", window.location.href).href,
+          ],
+        ],
       };
     </script>
     <script src="../vendor/ruffle/0.7.1/ruffle.js"></script>

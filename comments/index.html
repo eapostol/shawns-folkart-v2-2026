@@ -7,6 +7,12 @@
         autoplay: "on",
         splashScreen: false,
         unmuteOverlay: "hidden",
+        urlRewriteRules: [
+          [
+            /^https?:\/\/(?:www\.)?touchwooddesign\.com\/common\/(nav2?\.swf)$/i,
+            new URL("../common/", window.location.href).href + "$1",
+          ],
+        ],
       };
     </script>
     <script src="../vendor/ruffle/0.7.1/ruffle.js"></script>
