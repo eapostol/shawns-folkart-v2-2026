@@ -1,0 +1,87 @@
+<!-- @format -->
+
+<html>
+  <head>
+    <title>a2x4popup</title>
+    <script>
+      window.RufflePlayer = window.RufflePlayer || {};
+      window.RufflePlayer.config = {
+        autoplay: "on",
+        splashScreen: false,
+        unmuteOverlay: "hidden",
+      };
+    </script>
+    <script src="../vendor/ruffle/0.7.1/ruffle.js"></script>
+    <style>
+      html {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        min-height: 100dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+      }
+
+      .flash-stage {
+        border: 1px solid #808080;
+        width: 760px;
+        max-width: 100%;
+        aspect-ratio: 760 / 420;
+        flex-shrink: 0;
+      }
+
+      .flash-stage > object,
+      .flash-stage > embed,
+      .flash-stage > ruffle-object,
+      .flash-stage > ruffle-embed,
+      .flash-stage > ruffle-player {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body
+    bgcolor="#FFFFFF"
+    leftmargin="0"
+    topmargin="0"
+    marginwidth="0"
+    marginheight="0"
+  >
+    <!-- URL's used in the movie-->
+    <!-- text used in the movie-->
+    <!--Ask me how you can be a hit at the next dinner party! Canadian made, splinter-free and water resistant 2x4 is available in an assortment of lengths and comes with a seventy-year warranty. -->
+    <div align="center" class="flash-stage">
+      <object
+        classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+        codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"
+        width="760"
+        height="420"
+        vspace="0"
+        hspace="0"
+      >
+        <param name="movie" value="a2x4popup.swf" />
+        <param name="quality" value="high" />
+        <param name="bgcolor" value="#FFFFFF" />
+        <param name="swLiveConnect" value="true" />
+        <embed
+          src="a2x4popup.swf"
+          quality="high"
+          bgcolor="#FFFFFF"
+          width="760"
+          height="420"
+          type="application/x-shockwave-flash"
+          PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"
+          vspace="0"
+          hspace="0"
+          swliveconnect="true"
+        />
+      </object>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+baseURL=http://www.touchwooddesign.com/&introURL=index.html&splashURL=scene2/index.html&mainURL=scene3/index.html&link2URL=theartist/index.html&link3URL=theworks/index.html&link4URL=theshed/index.html&link5URL=links/index.html&link6URL=comments/index.html
+
+
+
+
+
+

@@ -1,0 +1,125 @@
+<!-- @format -->
+
+<html>
+  <head>
+    <title>Flash variables translator</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <script language="JavaScript1.2">
+      function translate1() {
+        theString = document.forms["theForm"].input.value + " ";
+        theOutput = "";
+
+        theStr = theString.split("\n");
+
+        for (i = 0; i < theStr.length; i++) {
+          theStr[i] = theStr[i].substring(0, theStr[i].length - 1);
+          theStr[i] = escape(theStr[i]);
+          theOutput += theStr[i] + "&";
+          theOutput = theOutput.replace("%3D", "=");
+        }
+
+        document.forms["theForm"].output.value = theOutput;
+      }
+
+      function translate2() {
+        theString = document.forms["theForm"].input.value + " ";
+        theOutput = "";
+
+        theStr = theString.split("&");
+
+        for (i = 0; i < theStr.length; i++) {
+          theStr[i] = theStr[i].replace("=", "%3D");
+          theStr[i] = unescape(theStr[i]);
+          theOutput += theStr[i] + "\n";
+        }
+
+        document.forms["theForm"].output.value = theOutput;
+      }
+    </script>
+    <style type="text/css">
+      p {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px}
+    </style>
+  </head>
+
+  <body
+    bgcolor="#3C4586"
+    text="#FFFFFF"
+    link="#FFFFFF"
+    vlink="#FFFFFF"
+    alink="#FFFFFF"
+  >
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" height="500">
+      <tr>
+        <td>
+          <table
+            width="500"
+            border="0"
+            cellspacing="0"
+            cellpadding="0"
+            align="center"
+          >
+            <tr>
+              <td>
+                <form name="theForm">
+                  <p style="font-size: 16px">
+                    <b
+                      ><br />
+                      Flash variables translator</b
+                    >
+                  </p>
+                  <p>
+                    <b>Enter your variables</b>, then choose your translation
+                    below. <br />
+                    The result appears in the bottom window.
+                    <br />
+                    <br />
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                      <textarea
+                        name="input"
+                        cols="70"
+                        rows="15"
+                        style="
+                          font-family: Verdana, Arial, Helvetica, sans-serif;
+                          font-size: 12px;
+                          color: #3c4586;
+                        "
+                      ></textarea>
+                    </font>
+                  </p>
+                  <p>
+                    <b>Translate</b>:
+                    <a href="javascript:translate1()">English to Flash</a> |
+                    <a href="javascript:translate2()">Flash to English</a>
+                  </p>
+                  <p>
+                    <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
+                      <textarea
+                        name="output"
+                        cols="70"
+                        rows="15"
+                        style="
+                          font-family: Verdana, Arial, Helvetica, sans-serif;
+                          font-size: 12px;
+                          color: #3c4586;
+                        "
+                      ></textarea>
+                    </font>
+                  </p>
+                  <p>
+                    For regular updates and more useful Web design tools, keep
+                    an eye on
+                    <b
+                      ><a href="http://www.computerarts.co.uk/web"
+                        >www.computerarts.co.uk/web</a
+                      ></b
+                    >
+                  </p>
+                </form>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>

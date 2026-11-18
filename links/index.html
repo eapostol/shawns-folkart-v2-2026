@@ -1,0 +1,113 @@
+<!-- @format -->
+
+<html>
+  <head>
+    <title>touchwooddesign.com :: Links</title>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+    <script language="javascript">
+      /*
+function loadwindow(URLtoload){
+window.open(URLtoload,'linkwindow','height=400,width=400,scrollbars=yes,status=no,location=yes,resizable=yes')
+}
+*/
+
+      function loadwindow(URLtoLoad) {
+        //v3.0
+        myWidth = 600;
+        myHeight = 400;
+        isCenter = true;
+        features = "scrollbars=yes,status=no,location=yes,resizable=yes";
+        if (window.screen)
+          if (isCenter)
+            if (isCenter == "true") {
+              var myLeft = (screen.width - myWidth) / 2;
+              var myTop = (screen.height - myHeight) / 2;
+              features += features != "" ? "," : "";
+              features += ",left=" + myLeft + ",top=" + myTop;
+            }
+        window.open(
+          URLtoLoad,
+          "linkwindow",
+          features +
+            (features != "" ? "," : "") +
+            "width=" +
+            myWidth +
+            ",height=" +
+            myHeight,
+        );
+      }
+    </script>
+    <script>
+      window.RufflePlayer = window.RufflePlayer || {};
+      window.RufflePlayer.config = {
+        autoplay: "on",
+        splashScreen: false,
+        unmuteOverlay: "hidden",
+        urlRewriteRules: [
+          [
+            /^https?:\/\/(?:www\.)?touchwooddesign\.com\/common\/(nav2?\.swf)$/i,
+            new URL("../common/", window.location.href).href + "$1",
+          ],
+        ],
+      };
+    </script>
+    <script src="../vendor/ruffle/0.7.1/ruffle.js"></script>
+    <style>
+      html {
+        height: 100%;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        min-height: 100dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #fff;
+      }
+
+      .flash-stage {
+        width: 760px;
+        max-width: 100%;
+        aspect-ratio: 760 / 420;
+        flex-shrink: 0;
+      }
+
+      .flash-stage > object,
+      .flash-stage > embed,
+      .flash-stage > ruffle-object,
+      .flash-stage > ruffle-embed,
+      .flash-stage > ruffle-player {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body bgcolor="#FFFFFF">
+    <!-- URL's used in the movie-->
+    <!-- text used in the movie-->
+    <div align="center" class="flash-stage">
+      <object
+        classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+        codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"
+        width="760"
+        height="420"
+      >
+        <param name="movie" value="links_final2.swf" />
+        <param name="quality" value="high" />
+        <param name="bgcolor" value="#FFFFFF" />
+        <embed
+          src="links_final2.swf"
+          quality="high"
+          bgcolor="#FFFFFF"
+          width="760"
+          height="420"
+          type="application/x-shockwave-flash"
+          PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"
+        />
+      </object>
+    </div>
+  </body>
+</html>
