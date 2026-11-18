@@ -1,0 +1,60 @@
+# OS metadata
+# https://github.com/github/gitignore/tree/main/Global
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+
+# Editor workspace state
+# https://github.com/github/gitignore/blob/main/Global/VisualStudioCode.gitignore
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+.idea/
+.history/
+*.swp
+*.swo
+*~
+
+# Local configuration, credentials, and dependencies
+.env
+.env.*
+!.env.example
+!.env.sample
+.htpasswd
+node_modules/
+
+# Logs and local archives
+# https://gist.github.com/octocat/9257657
+*.log
+*.7z
+*.rar
+*.zip
+
+# Dreamweaver Design Notes
+# https://helpx.adobe.com/ca/dreamweaver/desktop/manage-files/storing-file-information-design-notes.html
+_notes/
+*.mno
+
+# Known backup copies and the retired host configuration
+/backups/
+/comments/backups/
+/scene2/backup/
+/scene2/intro_new_backup.swf
+/scene3/backup/
+/scene3/4_main2_2.old
+/theartist/old_text/
+/.htaccess_off
+
+# The site serves SWFs, media, and the self-hosted Ruffle package directly.
+# Keep those assets eligible for tracking, including vendor/ruffle/.
