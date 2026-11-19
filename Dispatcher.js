@@ -254,7 +254,7 @@ function MM_FlashDispatch(
   if (player.installed == null) {
     var sniffer =
       '<EMBED HIDDEN="true" TYPE="application/x-shockwave-flash"' +
-      ' WIDTH="18" HEIGHT="18"' +
+      ' width="18" HEIGHT="18"' +
       ' BGCOLOR="' +
       document.bgcolor +
       '"' +
@@ -286,7 +286,7 @@ function MM_FlashDispatch(
     document.write('<body BGCOLOR="' + document.bgcolor + '">');
     document.write(sniffer);
     document.write("</body>");
-    document.write("</HTML>");
+    document.write("</html>");
     document.close();
   } else if (player.installed) {
     if (player.canPlay(contentVersion, requireLatestRevision)) {
