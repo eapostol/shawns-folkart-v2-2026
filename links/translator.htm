@@ -58,6 +58,18 @@
     </script>
     <style type="text/css">
       p {  font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px}
+
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
     </style>
   </head>
 
@@ -88,7 +100,7 @@
                     >
                   </p>
                   <p>
-                    <b>Enter your variables</b>, then choose your translation
+                    <b><label for="translator-input">Enter your variables</label></b>, then choose your translation
                     below. <br />
                     The result appears in the bottom window.
                     <br />
@@ -96,6 +108,7 @@
                     <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
                       <textarea
                         name="input"
+                        id="translator-input"
                         cols="70"
                         rows="15"
                         style="
@@ -112,9 +125,11 @@
                     <a href="javascript:translate2()">Flash to English</a>
                   </p>
                   <p>
+                    <label for="translator-output" class="visually-hidden">Translation result</label>
                     <font size="2" face="Verdana, Arial, Helvetica, sans-serif">
                       <textarea
                         name="output"
+                        id="translator-output"
                         cols="70"
                         rows="15"
                         style="
